@@ -1,0 +1,21 @@
+{
+    'name': 'Mystery Room Management',
+    'version': '19.0.1.0.0',
+    'author': 'Ibrahem Issa',
+    'category': 'Services',
+    'summary': 'Manage escape rooms, puzzles, scenarios, teams and game bookings',
+    'license': 'LGPL-3',
+    'depends': ['base'],
+    'data': [
+        'security/mystery_room_groups.xml',
+        'security/ir.model.access.csv',
+        'security/mystery_room_rules.xml',
+        'data/mystery_sequences.xml',
+        'views/mystery_room_views.xml',
+        'views/mystery_management_views.xml',
+        'views/mystery_session_views.xml',
+        'views/base_menu.xml',
+    ],
+    'installable': True,
+    'application': True,
+}

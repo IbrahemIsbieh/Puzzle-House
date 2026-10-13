@@ -1,0 +1,29 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_room_admin,mystery.room admin,model_mystery_room,mystery_room.group_mystery_room_admin,1,1,1,1
+access_puzzle_admin,mystery.puzzle admin,model_mystery_puzzle,mystery_room.group_mystery_room_admin,1,1,1,1
+access_scenario_admin,mystery.scenario admin,model_mystery_scenario,mystery_room.group_mystery_room_admin,1,1,1,1
+access_team_admin,mystery.team admin,model_mystery_team,mystery_room.group_mystery_room_admin,1,1,1,1
+access_booking_admin,mystery.booking admin,model_mystery_booking,mystery_room.group_mystery_room_admin,1,1,1,1
+access_session_admin,mystery.session admin,model_mystery_session,mystery_room.group_mystery_room_admin,1,1,1,1
+access_attempt_admin,mystery.puzzle.attempt admin,model_mystery_puzzle_attempt,mystery_room.group_mystery_room_admin,1,1,1,1
+access_hint_admin,mystery.hint.log admin,model_mystery_hint_log,mystery_room.group_mystery_room_admin,1,1,1,1
+access_room_booking_manager,mystery.room booking manager,model_mystery_room,mystery_room.group_mystery_room_booking_manager,1,0,0,0
+access_puzzle_booking_manager,mystery.puzzle booking manager,model_mystery_puzzle,mystery_room.group_mystery_room_booking_manager,1,0,0,0
+access_scenario_booking_manager,mystery.scenario booking manager,model_mystery_scenario,mystery_room.group_mystery_room_booking_manager,1,0,0,0
+access_team_booking_manager,mystery.team booking manager,model_mystery_team,mystery_room.group_mystery_room_booking_manager,1,1,1,0
+access_booking_booking_manager,mystery.booking booking manager,model_mystery_booking,mystery_room.group_mystery_room_booking_manager,1,1,1,0
+access_session_booking_manager,mystery.session booking manager,model_mystery_session,mystery_room.group_mystery_room_booking_manager,1,0,0,0
+access_room_game_master,mystery.room game master,model_mystery_room,mystery_room.group_mystery_room_game_master,1,0,0,0
+access_puzzle_game_master,mystery.puzzle game master,model_mystery_puzzle,mystery_room.group_mystery_room_game_master,1,0,0,0
+access_scenario_game_master,mystery.scenario game master,model_mystery_scenario,mystery_room.group_mystery_room_game_master,1,0,0,0
+access_team_game_master,mystery.team game master,model_mystery_team,mystery_room.group_mystery_room_game_master,1,0,0,0
+access_booking_game_master,mystery.booking game master,model_mystery_booking,mystery_room.group_mystery_room_game_master,1,0,0,0
+access_session_game_master,mystery.session game master,model_mystery_session,mystery_room.group_mystery_room_game_master,1,1,1,0
+access_attempt_game_master,mystery.puzzle.attempt game master,model_mystery_puzzle_attempt,mystery_room.group_mystery_room_game_master,1,1,1,0
+access_hint_game_master,mystery.hint.log game master,model_mystery_hint_log,mystery_room.group_mystery_room_game_master,1,1,1,0
+access_room_readonly,mystery.room readonly,model_mystery_room,mystery_room.group_mystery_room_readonly,1,0,0,0
+access_puzzle_readonly,mystery.puzzle readonly,model_mystery_puzzle,mystery_room.group_mystery_room_readonly,1,0,0,0
+access_scenario_readonly,mystery.scenario readonly,model_mystery_scenario,mystery_room.group_mystery_room_readonly,1,0,0,0
+access_team_readonly,mystery.team readonly,model_mystery_team,mystery_room.group_mystery_room_readonly,1,0,0,0
+access_booking_readonly,mystery.booking readonly,model_mystery_booking,mystery_room.group_mystery_room_readonly,1,0,0,0
+access_session_readonly,mystery.session readonly,model_mystery_session,mystery_room.group_mystery_room_readonly,1,0,0,0

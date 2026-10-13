@@ -1,0 +1,3 @@
+from .import test_mystery_room
+from .import test_mystery_puzzle_attempt
+from .import test_mystery_booking_validation

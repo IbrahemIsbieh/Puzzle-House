@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_mystery_room_admin" model="res.groups">
+        <field name="name">Mystery Room Administrator</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_mystery_room_booking_manager" model="res.groups">
+        <field name="name">Mystery Room Booking Manager</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_mystery_room_game_master" model="res.groups">
+        <field name="name">Mystery Room Game Master</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_mystery_room_readonly" model="res.groups">
+        <field name="name">Mystery Room Read Only</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+</odoo>

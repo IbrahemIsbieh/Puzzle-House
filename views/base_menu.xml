@@ -1,0 +1,20 @@
+<odoo>
+    <menuitem id="mystery_room_menu_root" name="Mystery Room"
+              sequence="10" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_booking_manager,mystery_room.group_mystery_room_game_master,mystery_room.group_mystery_room_readonly"/>
+    <menuitem id="mystery_room_menu_rooms" name="Rooms" parent="mystery_room_menu_root" action="mystery_room_action"
+              sequence="10" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_booking_manager,mystery_room.group_mystery_room_game_master,mystery_room.group_mystery_room_readonly"/>
+    <menuitem id="mystery_room_menu_puzzles" name="Puzzles" parent="mystery_room_menu_root" action="mystery_puzzle_action"
+              sequence="20" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_booking_manager,mystery_room.group_mystery_room_game_master,mystery_room.group_mystery_room_readonly"/>
+    <menuitem id="mystery_room_menu_scenarios" name="Scenarios" parent="mystery_room_menu_root" action="mystery_scenario_action"
+              sequence="30" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_booking_manager,mystery_room.group_mystery_room_game_master,mystery_room.group_mystery_room_readonly"/>
+    <menuitem id="mystery_room_menu_teams" name="Teams" parent="mystery_room_menu_root" action="mystery_team_action"
+              sequence="40" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_booking_manager,mystery_room.group_mystery_room_game_master,mystery_room.group_mystery_room_readonly"/>
+    <menuitem id="mystery_room_menu_bookings" name="Bookings" parent="mystery_room_menu_root" action="mystery_booking_action"
+              sequence="50" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_booking_manager,mystery_room.group_mystery_room_game_master,mystery_room.group_mystery_room_readonly"/>
+    <menuitem id="mystery_room_menu_sessions" name="Game Sessions" parent="mystery_room_menu_root" action="mystery_session_action"
+              sequence="60" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_booking_manager,mystery_room.group_mystery_room_game_master,mystery_room.group_mystery_room_readonly"/>
+    <menuitem id="mystery_room_menu_attempts" name="Puzzle Attempts" parent="mystery_room_menu_root" action="mystery_puzzle_attempt_action"
+              sequence="70" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_game_master"/>
+    <menuitem id="mystery_room_menu_hints" name="Hint History" parent="mystery_room_menu_root" action="mystery_hint_log_action"
+              sequence="80" groups="mystery_room.group_mystery_room_admin,mystery_room.group_mystery_room_game_master"/>
+</odoo>

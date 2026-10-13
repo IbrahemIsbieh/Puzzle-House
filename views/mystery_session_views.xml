@@ -1,0 +1,168 @@
+<odoo>
+    <record id="mystery_session_view_list" model="ir.ui.view">
+        <field name="name">mystery.session.list</field>
+        <field name="model">mystery.session</field>
+        <field name="arch" type="xml">
+            <list string="Game Sessions">
+                <field name="name"/>
+                <field name="booking_id"/>
+                <field name="team_id"/>
+                <field name="room_id"/>
+                <field name="scenario_id"/>
+                <field name="start_datetime"/>
+                <field name="state" widget="badge"
+                       decoration-info="state == 'planned'"
+                       decoration-warning="state == 'running'"
+                       decoration-success="state == 'won'"
+                       decoration-danger="state == 'lost'"/>
+                <field name="score"/>
+            </list>
+        </field>
+    </record>
+    <record id="mystery_session_view_form" model="ir.ui.view">
+        <field name="name">mystery.session.form</field>
+        <field name="model">mystery.session</field>
+        <field name="arch" type="xml">
+            <form string="Game Session">
+                <header>
+                    <button name="action_start_game" type="object" string="Start Game" class="btn-primary" invisible="state != 'planned'"/>
+                    <button name="action_win_game" type="object" string="Win" class="btn-primary" invisible="state != 'running'"/>
+                    <button name="action_lose_game" type="object" string="Lose" class="btn-primary" invisible="state != 'running'"/>
+                    <button name="action_cancel_game" type="object" string="Cancel" invisible="state not in ['planned', 'running']"/>
+                    <field name="state" widget="statusbar" statusbar_visible="planned,running,won,lost,cancelled"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><label for="name"/><h1><field name="name" readonly="1"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="booking_id"/>
+                            <field name="team_id" readonly="1"/>
+                            <field name="room_id" readonly="1"/>
+                            <field name="scenario_id" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="start_datetime"/>
+                            <field name="end_datetime"/>
+                        </group>
+                    </group>
+                    <group string="Game Statistics">
+                        <group>
+                            <field name="attempt_count" readonly="1"/>
+                            <field name="correct_attempt_count" readonly="1"/>
+                            <field name="success_rate" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="hint_count" readonly="1"/>
+                            <field name="score" readonly="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Scenario Puzzles">
+                            <field name="puzzle_ids" widget="many2many_tags" readonly="1"/>
+                        </page>
+                        <page string="Puzzle Attempts">
+                            <field name="attempt_ids" readonly="state != 'running'">
+                                <list editable="bottom">
+                                    <field name="puzzle_id" domain="[('id', 'in', parent.puzzle_ids)]"/>
+                                    <field name="answer_submitted"/>
+                                    <field name="is_correct" readonly="1"/>
+                                    <field name="points_awarded" readonly="1"/>
+                                    <field name="attempt_datetime"/>
+                                    <field name="notes"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Hint History">
+                            <field name="hint_log_ids" readonly="state != 'running'">
+                                <list editable="bottom">
+                                    <field name="puzzle_id" domain="[('id', 'in', parent.puzzle_ids)]"/>
+                                    <field name="hint_text"/>
+                                    <field name="used_datetime"/>
+                                    <field name="penalty_points"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="mystery_session_action" model="ir.actions.act_window">
+        <field name="name">Game Sessions</field>
+        <field name="res_model">mystery.session</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="mystery_puzzle_attempt_view_list" model="ir.ui.view">
+        <field name="name">mystery.puzzle.attempt.list</field>
+        <field name="model">mystery.puzzle.attempt</field>
+        <field name="arch" type="xml">
+            <list string="Puzzle Attempts">
+                <field name="session_id"/>
+                <field name="puzzle_id"/>
+                <field name="answer_submitted"/>
+                <field name="is_correct"/>
+                <field name="points_awarded"/>
+                <field name="attempt_datetime"/>
+            </list>
+        </field>
+    </record>
+    <record id="mystery_puzzle_attempt_view_form" model="ir.ui.view">
+        <field name="name">mystery.puzzle.attempt.form</field>
+        <field name="model">mystery.puzzle.attempt</field>
+        <field name="arch" type="xml">
+            <form string="Puzzle Attempt">
+                <sheet>
+                    <group>
+                        <field name="session_id"/>
+                        <field name="puzzle_id"/>
+                        <field name="answer_submitted"/>
+                        <field name="is_correct" readonly="1"/>
+                        <field name="points_awarded" readonly="1"/>
+                        <field name="attempt_datetime"/>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="mystery_puzzle_attempt_action" model="ir.actions.act_window">
+        <field name="name">Puzzle Attempts</field>
+        <field name="res_model">mystery.puzzle.attempt</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="mystery_hint_log_view_list" model="ir.ui.view">
+        <field name="name">mystery.hint.log.list</field>
+        <field name="model">mystery.hint.log</field>
+        <field name="arch" type="xml">
+            <list string="Hint History">
+                <field name="session_id"/>
+                <field name="puzzle_id"/>
+                <field name="hint_text"/>
+                <field name="used_datetime"/>
+                <field name="penalty_points"/>
+            </list>
+        </field>
+    </record>
+    <record id="mystery_hint_log_view_form" model="ir.ui.view">
+        <field name="name">mystery.hint.log.form</field>
+        <field name="model">mystery.hint.log</field>
+        <field name="arch" type="xml">
+            <form string="Hint Log">
+                <sheet>
+                    <group>
+                        <field name="session_id"/>
+                        <field name="puzzle_id"/>
+                        <field name="hint_text"/>
+                        <field name="used_datetime"/>
+                        <field name="penalty_points"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="mystery_hint_log_action" model="ir.actions.act_window">
+        <field name="name">Hint History</field>
+        <field name="res_model">mystery.hint.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

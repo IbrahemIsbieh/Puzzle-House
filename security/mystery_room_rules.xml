@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================== -->
+    <!-- Mystery Room Administrator     -->
+    <!-- Full access to all records     -->
+    <!-- ============================== -->
+
+    <record id="rule_mystery_room_admin" model="ir.rule">
+        <field name="name">Mystery Room Administrator: All Records</field>
+        <field name="model_id" ref="model_mystery_room"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_admin'))]"/>
+    </record>
+
+    <record id="rule_mystery_puzzle_admin" model="ir.rule">
+        <field name="name">Mystery Puzzle Administrator: All Records</field>
+        <field name="model_id" ref="model_mystery_puzzle"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_admin'))]"/>
+    </record>
+
+    <record id="rule_mystery_scenario_admin" model="ir.rule">
+        <field name="name">Mystery Scenario Administrator: All Records</field>
+        <field name="model_id" ref="model_mystery_scenario"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_admin'))]"/>
+    </record>
+
+    <record id="rule_mystery_team_admin" model="ir.rule">
+        <field name="name">Mystery Team Administrator: All Records</field>
+        <field name="model_id" ref="model_mystery_team"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_admin'))]"/>
+    </record>
+
+    <record id="rule_mystery_booking_admin" model="ir.rule">
+        <field name="name">Mystery Booking Administrator: All Records</field>
+        <field name="model_id" ref="model_mystery_booking"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_admin'))]"/>
+    </record>
+
+    <record id="rule_mystery_session_admin" model="ir.rule">
+        <field name="name">Mystery Session Administrator: All Records</field>
+        <field name="model_id" ref="model_mystery_session"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_admin'))]"/>
+    </record>
+
+    <record id="rule_mystery_attempt_admin" model="ir.rule">
+        <field name="name">Mystery Attempt Administrator: All Records</field>
+        <field name="model_id" ref="model_mystery_puzzle_attempt"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_admin'))]"/>
+    </record>
+
+    <record id="rule_mystery_hint_admin" model="ir.rule">
+        <field name="name">Mystery Hint Administrator: All Records</field>
+        <field name="model_id" ref="model_mystery_hint_log"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_admin'))]"/>
+    </record>
+
+
+    <!-- ============================== -->
+    <!-- Booking Manager                -->
+    <!-- Read-only record rules         -->
+    <!-- ============================== -->
+
+    <record id="rule_mystery_booking_manager_booking" model="ir.rule">
+        <field name="name">Booking Manager: Bookings</field>
+        <field name="model_id" ref="model_mystery_booking"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_booking_manager'))]"/>
+    </record>
+
+    <record id="rule_mystery_booking_manager_team" model="ir.rule">
+        <field name="name">Booking Manager: Teams</field>
+        <field name="model_id" ref="model_mystery_team"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_booking_manager'))]"/>
+    </record>
+
+
+    <!-- ============================== -->
+    <!-- Game Master                    -->
+    <!-- ============================== -->
+
+    <record id="rule_mystery_game_master_session" model="ir.rule">
+        <field name="name">Game Master: Sessions</field>
+        <field name="model_id" ref="model_mystery_session"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_game_master'))]"/>
+    </record>
+
+    <record id="rule_mystery_game_master_attempt" model="ir.rule">
+        <field name="name">Game Master: Puzzle Attempts</field>
+        <field name="model_id" ref="model_mystery_puzzle_attempt"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_game_master'))]"/>
+    </record>
+
+    <record id="rule_mystery_game_master_hint" model="ir.rule">
+        <field name="name">Game Master: Hint History</field>
+        <field name="model_id" ref="model_mystery_hint_log"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_game_master'))]"/>
+    </record>
+
+
+    <!-- ============================== -->
+    <!-- Read Only User                 -->
+    <!-- ============================== -->
+
+    <record id="rule_mystery_readonly_room" model="ir.rule">
+        <field name="name">Read Only: Rooms</field>
+        <field name="model_id" ref="model_mystery_room"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_readonly'))]"/>
+    </record>
+
+    <record id="rule_mystery_readonly_puzzle" model="ir.rule">
+        <field name="name">Read Only: Puzzles</field>
+        <field name="model_id" ref="model_mystery_puzzle"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_readonly'))]"/>
+    </record>
+
+    <record id="rule_mystery_readonly_scenario" model="ir.rule">
+        <field name="name">Read Only: Scenarios</field>
+        <field name="model_id" ref="model_mystery_scenario"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_readonly'))]"/>
+    </record>
+
+    <record id="rule_mystery_readonly_team" model="ir.rule">
+        <field name="name">Read Only: Teams</field>
+        <field name="model_id" ref="model_mystery_team"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_readonly'))]"/>
+    </record>
+
+    <record id="rule_mystery_readonly_booking" model="ir.rule">
+        <field name="name">Read Only: Bookings</field>
+        <field name="model_id" ref="model_mystery_booking"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_readonly'))]"/>
+    </record>
+
+    <record id="rule_mystery_readonly_session" model="ir.rule">
+        <field name="name">Read Only: Sessions</field>
+        <field name="model_id" ref="model_mystery_session"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('mystery_room.group_mystery_room_readonly'))]"/>
+    </record>
+
+</odoo>

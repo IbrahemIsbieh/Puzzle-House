@@ -1,0 +1,660 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * mystery_room
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-13 13:46+0000\n"
+"PO-Revision-Date: 2026-10-13 13:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Language: ar\n"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__active
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__active
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__active
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__answer
+msgid "Answer"
+msgstr "الإجابة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__attempt_count
+msgid "Attempt Count"
+msgstr "عدد المحاولات"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__attempt_datetime
+msgid "Attempt Datetime"
+msgstr "تاريخ ووقت المحاولة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__booking_id
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_booking_view_form
+msgid "Booking"
+msgstr "الحجز"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__booking_count
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__booking_count
+msgid "Booking Count"
+msgstr "عدد الحجوزات"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__name
+msgid "Booking Reference"
+msgstr "رقم الحجز المرجعي"
+
+#. module: mystery_room
+#: model:ir.actions.act_window,name:mystery_room.mystery_booking_action
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__booking_ids
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__booking_ids
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_bookings
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_booking_view_list
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_room_view_form
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_team_view_form
+msgid "Bookings"
+msgstr "الحجوزات"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_booking_view_form
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_booking__state__cancelled
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_session__state__cancelled
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__capacity
+msgid "Capacity"
+msgstr "السعة"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_booking_view_form
+msgid "Complete"
+msgstr "إكمال"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_booking__state__completed
+msgid "Completed"
+msgstr "مكتمل"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_booking_view_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_booking__state__confirmed
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__contact_name
+msgid "Contact Name"
+msgstr "اسم جهة الاتصال"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__correct_attempt_count
+msgid "Correct Attempt Count"
+msgstr "عدد المحاولات الصحيحة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__create_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__create_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__create_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__create_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__create_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__create_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__create_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__create_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__create_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__create_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__create_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__create_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__create_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__create_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__create_date
+msgid "Created on"
+msgstr "تاريخ الإنشاء"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_scenario_view_form
+msgid "Describe the story and objectives..."
+msgstr "صف القصة والأهداف..."
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__description
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__description
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_room_view_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__difficulty
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__difficulty
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__difficulty
+msgid "Difficulty"
+msgstr "مستوى الصعوبة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__display_name
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__display_name
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__display_name
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__display_name
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__display_name
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__display_name
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__display_name
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_booking__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__duration_minutes
+msgid "Duration (Minutes)"
+msgstr "المدة (بالدقائق)"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_puzzle__difficulty__easy
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_room__difficulty__easy
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_scenario__difficulty__easy
+msgid "Easy"
+msgstr "سهل"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__end_datetime
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__end_datetime
+msgid "End Datetime"
+msgstr "تاريخ ووقت الانتهاء"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__estimated_duration
+msgid "Estimated Duration (Minutes)"
+msgstr "المدة المقدرة (بالدقائق)"
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_scenario_duration_positive
+msgid "Estimated duration must be greater than zero."
+msgstr "يجب أن تكون المدة المقدرة أكبر من صفر."
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__session_id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__session_id
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Game Session"
+msgstr "جلسة اللعب"
+
+#. module: mystery_room
+#: model:ir.actions.act_window,name:mystery_room.mystery_session_action
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__session_ids
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_sessions
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_booking_view_form
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_list
+msgid "Game Sessions"
+msgstr "جلسات اللعب"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Game Statistics"
+msgstr "إحصائيات اللعبة"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_puzzle__difficulty__hard
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_room__difficulty__hard
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_scenario__difficulty__hard
+msgid "Hard"
+msgstr "صعب"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__hint
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_puzzle_view_form
+msgid "Hint"
+msgstr "تلميح"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__hint_count
+msgid "Hint Count"
+msgstr "عدد التلميحات"
+
+#. module: mystery_room
+#: model:ir.actions.act_window,name:mystery_room.mystery_hint_log_action
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__hint_log_ids
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_hints
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_hint_log_view_list
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Hint History"
+msgstr "سجل التلميحات"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_hint_log_view_form
+msgid "Hint Log"
+msgstr "سجل التلميح"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__hint_text
+msgid "Hint Used"
+msgstr "التلميح المستخدم"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__id
+msgid "ID"
+msgstr "المعرّف"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__is_correct
+msgid "Is Correct"
+msgstr "إجابة صحيحة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__write_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__write_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__write_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__write_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__write_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__write_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__write_uid
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__write_uid
+msgid "Last Updated by"
+msgstr "آخر من قام بالتحديث"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__write_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__write_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__write_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__write_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__write_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__write_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__write_date
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__write_date
+msgid "Last Updated on"
+msgstr "تاريخ آخر تحديث"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Lose"
+msgstr "تسجيل الخسارة"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_session__state__lost
+msgid "Lost"
+msgstr "خاسر"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_puzzle__difficulty__medium
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_room__difficulty__medium
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_scenario__difficulty__medium
+msgid "Medium"
+msgstr "متوسط"
+
+#. module: mystery_room
+#: model:ir.model,name:mystery_room.model_mystery_session
+msgid "Mystery Game Session"
+msgstr "جلسة لعبة الغموض"
+
+#. module: mystery_room
+#: model:ir.model,name:mystery_room.model_mystery_hint_log
+msgid "Mystery Hint Log"
+msgstr "سجل تلميحات لعبة الغموض"
+
+#. module: mystery_room
+#: model:ir.model,name:mystery_room.model_mystery_puzzle
+msgid "Mystery Puzzle"
+msgstr "لغز الغموض"
+
+#. module: mystery_room
+#: model:ir.model,name:mystery_room.model_mystery_puzzle_attempt
+msgid "Mystery Puzzle Attempt"
+msgstr "محاولة حل لغز الغموض"
+
+#. module: mystery_room
+#: model:ir.model,name:mystery_room.model_mystery_room
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_root
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_room_view_form
+msgid "Mystery Room"
+msgstr "غرفة الغموض"
+
+#. module: mystery_room
+#: model:res.groups,name:mystery_room.group_mystery_room_admin
+msgid "Mystery Room Administrator"
+msgstr "مدير غرفة الغموض"
+
+#. module: mystery_room
+#: model:ir.model,name:mystery_room.model_mystery_booking
+msgid "Mystery Room Booking"
+msgstr "حجز غرفة الغموض"
+
+#. module: mystery_room
+#: model:res.groups,name:mystery_room.group_mystery_room_booking_manager
+msgid "Mystery Room Booking Manager"
+msgstr "مسؤول حجوزات غرفة الغموض"
+
+#. module: mystery_room
+#: model:res.groups,name:mystery_room.group_mystery_room_game_master
+msgid "Mystery Room Game Master"
+msgstr "مشرف ألعاب غرفة الغموض"
+
+#. module: mystery_room
+#: model:res.groups,name:mystery_room.group_mystery_room_readonly
+msgid "Mystery Room Read Only"
+msgstr "مستخدم غرفة الغموض للقراءة فقط"
+
+#. module: mystery_room
+#: model:ir.actions.act_window,name:mystery_room.mystery_room_action
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_room_view_list
+msgid "Mystery Rooms"
+msgstr "غرف الغموض"
+
+#. module: mystery_room
+#: model:ir.model,name:mystery_room.model_mystery_scenario
+msgid "Mystery Scenario"
+msgstr "سيناريو الغموض"
+
+#. module: mystery_room
+#: model:ir.model,name:mystery_room.model_mystery_team
+msgid "Mystery Team"
+msgstr "فريق الغموض"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__name
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__notes
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__notes
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__notes
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_booking_view_form
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_team_view_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__member_count
+msgid "Number of Members"
+msgstr "عدد الأعضاء"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__player_count
+msgid "Number of Players"
+msgstr "عدد اللاعبين"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__penalty_points
+msgid "Penalty Points"
+msgstr "نقاط الخصم"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_team__phone
+msgid "Phone"
+msgstr "رقم الهاتف"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_session__state__planned
+msgid "Planned"
+msgstr "مخطط لها"
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_booking_players_positive
+msgid "Player count must be greater than zero."
+msgstr "يجب أن يكون عدد اللاعبين أكبر من صفر."
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__points
+msgid "Points"
+msgstr "النقاط"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__points_awarded
+msgid "Points Awarded"
+msgstr "النقاط الممنوحة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__price
+msgid "Price"
+msgstr "السعر"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__puzzle_id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__puzzle_id
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_puzzle_view_form
+msgid "Puzzle"
+msgstr "اللغز"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_puzzle_attempt_view_form
+msgid "Puzzle Attempt"
+msgstr "محاولة حل اللغز"
+
+#. module: mystery_room
+#: model:ir.actions.act_window,name:mystery_room.mystery_puzzle_attempt_action
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__attempt_ids
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_attempts
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_puzzle_attempt_view_list
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Puzzle Attempts"
+msgstr "محاولات حل الألغاز"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__code
+msgid "Puzzle Code"
+msgstr "رمز اللغز"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__puzzle_count
+msgid "Puzzle Count"
+msgstr "عدد الألغاز"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__name
+msgid "Puzzle Name"
+msgstr "اسم اللغز"
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_puzzle_code_unique
+msgid "Puzzle code must be unique."
+msgstr "يجب أن يكون رمز اللغز فريدًا وغير مكرر."
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_puzzle_points_nonnegative
+msgid "Puzzle points cannot be negative."
+msgstr "لا يمكن أن تكون نقاط اللغز سالبة."
+
+#. module: mystery_room
+#: model:ir.actions.act_window,name:mystery_room.mystery_puzzle_action
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_scenario__puzzle_ids
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_puzzles
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_puzzle_view_list
+msgid "Puzzles"
+msgstr "الألغاز"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__question
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_puzzle_view_form
+msgid "Question"
+msgstr "السؤال"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_booking_view_form
+msgid "Reset to Draft"
+msgstr "إعادة إلى المسودة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__room_id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__room_id
+msgid "Room"
+msgstr "الغرفة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__code
+msgid "Room Code"
+msgstr "رمز الغرفة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_room__name
+msgid "Room Name"
+msgstr "اسم الغرفة"
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_room_capacity_positive
+msgid "Room capacity must be greater than zero."
+msgstr "يجب أن تكون سعة الغرفة أكبر من صفر."
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_room_code_unique
+msgid "Room code must be unique."
+msgstr "يجب أن يكون رمز الغرفة فريدًا وغير مكرر."
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_room_duration_positive
+msgid "Room duration must be greater than zero."
+msgstr "يجب أن تكون مدة الغرفة أكبر من صفر."
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_room_price_nonnegative
+msgid "Room price cannot be negative."
+msgstr "لا يمكن أن يكون سعر الغرفة سالبًا."
+
+#. module: mystery_room
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_rooms
+msgid "Rooms"
+msgstr "الغرف"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_session__state__running
+msgid "Running"
+msgstr "جارية"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__scenario_id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__scenario_id
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_scenario_view_form
+msgid "Scenario"
+msgstr "السيناريو"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__puzzle_ids
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Scenario Puzzles"
+msgstr "ألغاز السيناريو"
+
+#. module: mystery_room
+#: model:ir.actions.act_window,name:mystery_room.mystery_scenario_action
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle__scenario_ids
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_scenarios
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_scenario_view_list
+msgid "Scenarios"
+msgstr "السيناريوهات"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__score
+msgid "Score"
+msgstr "النتيجة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__name
+msgid "Session Reference"
+msgstr "رقم الجلسة المرجعي"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__start_datetime
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__start_datetime
+msgid "Start Datetime"
+msgstr "تاريخ ووقت البدء"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Start Game"
+msgstr "بدء اللعبة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__state
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_puzzle_attempt__answer_submitted
+msgid "Submitted Answer"
+msgstr "الإجابة المقدمة"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__success_rate
+msgid "Success Rate"
+msgstr "نسبة النجاح"
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_booking__team_id
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_session__team_id
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_team_view_form
+msgid "Team"
+msgstr "الفريق"
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_team_members_positive
+msgid "Team must have at least one member."
+msgstr "يجب أن يتكون الفريق من عضو واحد على الأقل."
+
+#. module: mystery_room
+#: model:ir.actions.act_window,name:mystery_room.mystery_team_action
+#: model:ir.ui.menu,name:mystery_room.mystery_room_menu_teams
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_team_view_list
+msgid "Teams"
+msgstr "الفرق"
+
+#. module: mystery_room
+#: model:ir.model.constraint,message:mystery_room.constraint_mystery_booking_date_order
+msgid "The booking end time must be later than the start time."
+msgstr "يجب أن يكون وقت انتهاء الحجز بعد وقت بدايته."
+
+#. module: mystery_room
+#: model:ir.model.fields,field_description:mystery_room.field_mystery_hint_log__used_datetime
+msgid "Used At"
+msgstr "وقت الاستخدام"
+
+#. module: mystery_room
+#: model_terms:ir.ui.view,arch_db:mystery_room.mystery_session_view_form
+msgid "Win"
+msgstr "تسجيل الفوز"
+
+#. module: mystery_room
+#: model:ir.model.fields.selection,name:mystery_room.selection__mystery_session__state__won
+msgid "Won"
+msgstr "فائز"
